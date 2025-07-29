@@ -1,0 +1,17 @@
+Task: Create a user registration form!
+create a basic HTML file that includes a form for user registration .The form should collect the following information:
+Full name
+EMail
+phn num
+gender(Radio button: male,female,other)
+Password(with a field for confiriming password)
+D.O.B(using a date picker)
+Country(dROP DOWN MENU WITH ATLEAST 5 countries)
+terms and conditions (checkbox)
+
+Form Valiation
+Make sure th email is in correct format(use type="email" attribute)
+make the password and the confirm password field required
+Ensure the user accepts the Terms and condtions before submitting the form(use the checkbox with required attribute)
+submit button:
+Include a submit button of the form to send the data

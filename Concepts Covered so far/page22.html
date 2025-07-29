@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Iframe Website</title>
+</head>
+<body>
+  <!-- Header -->
+  <iframe 
+    srcdoc="<html><body><h1 align='center'>My Website</h1></body></html>" 
+    width="100%" height="100">
+  </iframe>
+  
+  <!-- Menu -->
+  <iframe 
+    srcdoc="<html><body>
+              <p align='center'>
+                <a href='about.html' target='rightFrame'>About Us</a> | 
+                <a href='contact.html' target='rightFrame'>Contact Us</a> | 
+                <a href='menu.html' target='rightFrame'>Menu</a>
+              </p>
+            </body></html>" 
+    width="100%" height="50">
+  </iframe>
+  
+  <!-- Content Area (Left and Right) -->
+  <p>
+    <!-- Left Side (Navigation) -->
+    <iframe 
+      srcdoc="<html><body>
+                <p><a href='about.html' target='rightFrame'>About Us</a></p>
+                <p><a href='contact.html' target='rightFrame'>Contact Us</a></p>
+                <p><a href='menu.html' target='rightFrame'>Menu</a></p>
+              </body></html>" 
+      align="left" width="20%" height="400">
+    </iframe>
+    
+    <!-- Right Side (Main Content) -->
+    <iframe 
+      name="rightFrame"
+      srcdoc="<html><body>
+                <p align='center'>Welcome to our website! We provide great services.</p>
+              </body></html>" 
+      width="80%" height="400">
+    </iframe>
+  </p>
+  
+  <!-- Footer -->
+  <iframe 
+    srcdoc="<html><body><p align='center'>&copy; 2025 All Rights Reserved.</p></body></html>" 
+    width="100%" height="50">
+  </iframe>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Iframe Website</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <iframe srcdoc="
+        <html>
+        <body>
+            <h1 align='center'>My Website</h1>
+        </body>
+        </html>
+    " width="100%" height="100"></iframe>
+
+    <!-- Menu -->
+    <iframe srcdoc="
+        <html>
+        <body>
+            <p align='center'>
+                <a href='about.html' target='contentFrame'>About Us</a> | 
+                <a href='contact.html' target='contentFrame'>Contact Us</a> |
+                <a href='menu.html' target='contentFrame'>Menu</a>
+            </p>
+        </body>
+        </html>
+    " width="100%" height="50"></iframe>
+
+    <!-- Content Area (Divided into Left and Right) -->
+    <table width="100%" height="400">
+        <tr>
+            <!-- Left Side (Links) -->
+            <td width="20%">
+                <iframe srcdoc="
+                    <html>
+                    <body>
+                        <p><a href='about.html' target='rightFrame'>About Us</a></p>
+                        <p><a href='contact.html' target='rightFrame'>Contact Us</a></p>
+                        <p><a href='menu.html' target='rightFrame'>Menu</a></p>
+                    </body>
+                    </html>
+                " width="100%" height="100%"></iframe>
+            </td>
+
+            <!-- Right Side (Content Display) -->
+            <td width="80%">
+                <iframe name="rightFrame" srcdoc="
+                    <html>
+                    <body>
+                        <p align='center'>Welcome to our website! We provide great services.</p>
+                    </body>
+                    </html>
+                " width="100%" height="100%"></iframe>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Footer -->
+    <iframe srcdoc="
+        <html>
+        <body>
+            <p align='center'>&copy; 2025 All Rights Reserved.</p>
+        </body>
+        </html>
+    " width="100%" height="50"></iframe>
+
+</body>
+</html>
